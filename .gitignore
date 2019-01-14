@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+
+//ignore dist
+./dist
+
+
+ignore lock files
+yarn.lock
+package-lock.json
