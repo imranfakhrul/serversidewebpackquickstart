@@ -62,7 +62,7 @@ typings/
 
 
 # ignore dist
-./dist
+dist
 
 
 ignore lock files
