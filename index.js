@@ -1,10 +1,13 @@
-import express from 'express';
+import express from "express";
+import hell from "./hell";
 const app = express();
 
-app.get('/', (req, res) => {
-    res.send("Hello world!");
+hell("hell");
+
+app.get("/", (req, res) => {
+  res.send("Hello world!");
 });
 
 app.listen(3000, () => {
-    console.log('Server is listening on PORT 3000');
+  console.log("Server is listening on PORT 3000");
 });

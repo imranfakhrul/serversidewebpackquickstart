@@ -61,7 +61,7 @@ typings/
 .next
 
 
-//ignore dist
+# ignore dist
 ./dist
 
 

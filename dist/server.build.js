@@ -87,6 +87,18 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./hell.js":
+/*!*****************!*\
+  !*** ./hell.js ***!
+  \*****************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (a) {\n  return console.log(a);\n});\n\n//# sourceURL=webpack:///./hell.js?");
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -95,7 +107,7 @@ module.exports =
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n\nvar app = express__WEBPACK_IMPORTED_MODULE_0___default()();\napp.get('/', function (req, res) {\n  res.send(\"Hello world!\");\n});\napp.listen(3000, function () {\n  console.log('Server is listening on PORT 3000');\n});\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! express */ \"express\");\n/* harmony import */ var express__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(express__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _hell__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hell */ \"./hell.js\");\n\n\nvar app = express__WEBPACK_IMPORTED_MODULE_0___default()();\nObject(_hell__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(\"hell\");\napp.get(\"/\", function (req, res) {\n  res.send(\"Hello world!\");\n});\napp.listen(3000, function () {\n  console.log(\"Server is listening on PORT 3000\");\n});\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
