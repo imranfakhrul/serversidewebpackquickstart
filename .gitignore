@@ -65,6 +65,6 @@ typings/
 dist
 
 
-ignore lock files
+# ignore lock files
 yarn.lock
 package-lock.json
